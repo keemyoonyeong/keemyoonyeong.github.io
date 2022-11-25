@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+    color: #ff0000;
+    background: violet;
+}
+
+html {
+    @apply w-full h-screen overflow-hidden;
+}
+
+body {
+    font-family: GmarketSans;
+    margin: 0px;
+    @apply w-full h-full overflow-x-hidden overflow-y-auto bg-gray-900;
+    scroll-snap-type: y mandatory; 
+}
+
+.dump-scroll {
+    height: 3000px;
+    width: 100%;
+}
+
+.flex-center {
+    @apply flex flex-col items-center justify-center;
+}
+
+.section {
+    @apply relative z-0 flex flex-row w-full h-screen overflow-hidden;
+    scroll-snap-align: start;
+}

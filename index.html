@@ -1,12 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>반가워요 :)</title>
-</head>
-<body>
-    TEST 중
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>yoon's portfolio</title>
+		<link
+			href="https://webfontworld.github.io/gmarket/GmarketSans.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles/output.css" />
+	</head>
+	<body>
+		<!-- Header Title (top-fixed) -->
+		<div
+			class="fixed top-0 left-0 right-0 z-10 flex flex-row items-center h-16 px-10 text-sm text-white select-none place-content-between"
+		>
+			<!-- Left section -->
+			<div class="logo">포트폴리오</div>
+
+			<!-- Right section -->
+			<div class="">
+				<span class="">keemyoonyeong@gmail.com</span>
+			</div>
+		</div>
+
+		<div class="section">
+			<!-- <img class="absolute bottom-0 left-2 h-1/2" src="./assets/profile.png" alt="" srcset=""> -->
+			<div class="flex-1 h-full px-10 flex-center">
+				<div class="text-6xl font-bold text-white" style="line-height: 1.2">
+					<div class="animate-bounce">👋</div>
+					Hello, Welcome to my portfolio.
+				</div>
+			</div>
+			<img
+				class="flex-initial h-full grayscale"
+				src="./assets/praha.jpg"
+				alt=""
+				srcset=""
+			/>
+		</div>
+		<div class="bg-gray-800 section">
+			<span>section2</span>
+		</div>
+		<div class="section">
+			<span>section3</span>
+		</div>
+		<div class="bg-gray-800 section">
+			<span>section4</span>
+		</div>
+		<div class="section">
+			<span>section5</span>
+		</div>
+		<div class="relative text-gray-800 bg-white section flex-center">
+			<div class="w-full h-full flex-center">
+				<div class="text-xl font-bold ">
+					Contact me 
+				</div>
+			</div>
+			<!-- Footer -->
+			<div
+				class="absolute bottom-0 left-0 right-0 z-10 flex flex-row items-center px-10 py-10 text-sm text-gray-400 place-content-between"
+			>
+				<!-- Left section -->
+				<div class="flex flex-row items-center space-x-2">
+					<span> © 2022 by yoon</span>
+					<a href="https://github.com/keemyoonyeong" target="_blank">
+						<img
+							class="cursor-pointer opacity-40 hover:opacity-90"
+							src="./assets/github-svgrepo-com.svg"
+							alt="github link"
+						/>
+					</a>
+				</div>
+
+				<!-- Right section -->
+				<div class="">
+					<div
+						id="move-to-top"
+						class="cursor-pointer animate-pulse hover:text-gray-800"
+					>
+						<span> Move to top ▲ </span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			const moveTotopBtn = document.getElementById("move-to-top");
+			moveTotopBtn.onclick = () => {
+				console.log("document.body.scrollTop ->");
+				document.body.scrollTop = 0;
+				console.log("document.body.scrollTop", document.body.scrollTop);
+			};
+		</script>
+	</body>
 </html>
