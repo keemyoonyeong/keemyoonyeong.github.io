@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 ::selection {
-    color: #ff0000;
-    background: violet;
+    color: #ead915;
+    background: rgb(0, 0, 0);
 }
 
 html {
@@ -27,7 +27,26 @@ body {
     @apply flex flex-col items-center justify-center;
 }
 
+
+/* ----------------------------------------------------------------------------- */
+/*                                     section                                   */
+/* ----------------------------------------------------------------------------- */
 .section {
-    @apply relative z-0 flex flex-row w-full h-screen overflow-hidden;
+    @apply relative z-0 flex flex-col w-full h-screen overflow-hidden;
     scroll-snap-align: start;
+}
+
+
+.section .header {
+    @apply w-full px-10 pt-24 pb-10 text-2xl text-white;
+}
+
+
+.section .content {
+    @apply w-full px-10 text-base font-light text-white;
+    /* padding: 200px; */
+}
+
+img {
+    user-select: none;
 }

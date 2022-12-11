@@ -14,10 +14,12 @@
 	<body>
 		<!-- Header Title (top-fixed) -->
 		<div
-			class="fixed top-0 left-0 right-0 z-10 flex flex-row items-center h-16 px-10 text-sm text-white select-none place-content-between"
+			class="fixed top-0 left-0 right-0 z-10 flex flex-row items-center h-16 px-10 space-x-4 text-xs text-white select-none place-content-between"
 		>
 			<!-- Left section -->
-			<div class="logo">포트폴리오</div>
+			<div class="logo">Portfolio</div>
+
+			<div class="flex-grow h-[1px] bg-white"></div>
 
 			<!-- Right section -->
 			<div class="">
@@ -27,36 +29,93 @@
 
 		<div class="section">
 			<!-- <img class="absolute bottom-0 left-2 h-1/2" src="./assets/profile.png" alt="" srcset=""> -->
-			<div class="flex-1 h-full px-10 flex-center">
+			<div class="flex-1 h-full px-10 text-center flex-center">
 				<div class="text-6xl font-bold text-white" style="line-height: 1.2">
-					<div class="animate-bounce">👋</div>
-					Hello, Welcome to my portfolio.
+					<div class="">Hello 👋</div>
 				</div>
+
+				<!-- <div>
+					<img
+						class="w-12 h-12 rotate-180 cursor-pointer "
+						src="./assets/arrow-top.svg"
+						alt="github link"
+					/>
+				</div> -->
 			</div>
-			<img
+			<!-- <img
 				class="flex-initial h-full grayscale"
 				src="./assets/praha.jpg"
 				alt=""
 				srcset=""
+			/> -->
+		</div>
+		<div class="bg-gray-800 section" id="devel">
+			<div class="header">
+				<span>기술 스택</span>
+			</div>
+
+			<div class="content">
+				<ul>
+					<li>> React</li>
+					<li>> typescript</li>
+					<li>> javascript</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="section">
+			<div class="header">
+				<span>이력</span>
+			</div>
+
+			<div class="content">
+				<ul>
+					<li>> 스트럼코리아</li>
+					<li>> 주식회사 산돌</li>
+				</ul>
+			</div>
+
+
+			<div class="header">
+				<span>학력</span>
+			</div>
+
+			<div class="content">
+				<ul>
+					<li>> 광운대학교 정보콘텐츠학과</li>
+					<li>> 미림여자정보과학고등학교 뉴미디어솔루션과</li>
+				</ul>
+			</div>
+		</div>
+		<div class="bg-gray-800 section">
+			<div class="header">
+				<span>개발 경험</span>
+			</div>
+
+			<div class="content">
+				정부사업 참여
+				실시간 메시지 채팅 
+				그래프큐엘 실시간 구독 (섭스크립션)
+				게시글 댓글 이모지 구현 
+				반응형 웹 구현 tailwind 
+				회원가입 회원 관리 내정보 관리 
+				Canvas와 로 에디터 구현 
+				전체 서비스 db 구상 및 구현 
+				풀스택 서비스 제작 및 관리 
+				샘플 데모 구축 및 베타 서비스 진행 
+				실시간 반응 레코딩 및 재생 플레이어 제작 
+			</div>
+		</div>
+		<div class="p-20 section">
+			<span>개발 블로그</span>
+			<embed
+				src="https://www.notion.so/yoonyeong/Blog-home-0fcfd472fe6e4e3d9f1f796519eb4df9"
+				type=""
 			/>
-		</div>
-		<div class="bg-gray-800 section">
-			<span>section2</span>
-		</div>
-		<div class="section">
-			<span>section3</span>
-		</div>
-		<div class="bg-gray-800 section">
-			<span>section4</span>
-		</div>
-		<div class="section">
-			<span>section5</span>
 		</div>
 		<div class="relative text-gray-800 bg-white section flex-center">
 			<div class="w-full h-full flex-center">
-				<div class="text-xl font-bold ">
-					Contact me 
-				</div>
+				<div class="text-xl font-bold">Contact me</div>
 			</div>
 			<!-- Footer -->
 			<div
