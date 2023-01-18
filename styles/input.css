@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-::selection {
-    color: #ead915;
-    background: rgb(0, 0, 0);
-}
 
 html {
     @apply w-full h-screen overflow-hidden;
@@ -28,6 +24,10 @@ body {
 }
 
 
+::selection {
+    @apply font-bold text-gray-800 bg-yellow-300;
+}
+
 /* ----------------------------------------------------------------------------- */
 /*                                     section                                   */
 /* ----------------------------------------------------------------------------- */
@@ -36,17 +36,65 @@ body {
     scroll-snap-align: start;
 }
 
-
+.section:nth-child(odd) {
+    @apply bg-gray-800
+ }
+ 
 .section .header {
     @apply w-full px-10 pt-24 pb-10 text-2xl text-white;
 }
 
 
 .section .content {
-    @apply w-full px-10 text-base font-light text-white;
+    @apply w-full px-10 font-sans text-base font-light text-white;
     /* padding: 200px; */
 }
 
 img {
     user-select: none;
+}
+
+.emotion-badge {
+    @apply hover:bg-gray-100 select-none active:bg-gray-200 text-base flex flex-row space-x-2 px-4 items-center py-1 border-2 border-black rounded-full cursor-pointer
+}
+
+.tooltip {
+    @apply relative;
+}
+
+.tooltip .tooltiptext {
+    @apply absolute invisible px-4 py-1 text-sm text-white bg-gray-700 rounded left-1/2 whitespace-nowrap;
+    margin: 0px 0px 0px 0px !important;
+    bottom: calc(150% + 8px);
+    transform: translate(-50%, 1em);
+    transition: all .15s ease-in-out;
+}
+
+.tooltip:hover .tooltiptext {
+    @apply visible
+}
+
+.tooltip .tooltiptext::before {
+    content: '';
+    @apply absolute top-[100%] left-1/2 w-0 h-0 border-t-gray-700;
+    border: .5em solid transparent;
+    border-top-color: rgb(55 65 81);
+    transform: translate(-50%, 0);
+}
+
+
+.vail {
+    @apply fixed flex justify-center flex-row left-0 z-20 top-0 right-0 bottom-0 bg-black bg-opacity-50
+}
+
+.modal {
+    @apply absolute mt-20 overflow-hidden bg-white rounded py-12 px-10
+}
+
+.form .form-label {
+    @apply text-xs text-gray-500;
+}
+
+.form .form-input {
+    @apply font-sans border-2 border-gray-300 rounded outline-none w-60 focus:border-gray-400;
 }
